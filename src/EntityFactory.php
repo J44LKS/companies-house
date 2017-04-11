@@ -91,7 +91,7 @@ class EntityFactory
                             try {
                                 $data[$field] = new \DateTime($data[$field]);
                             } catch (\Exception $e) {
-                                //noop
+                                unset($data[$field]);
                             }
                         } else {
                             unset($data[$field]);
