@@ -88,7 +88,11 @@ class EntityFactory
 
                     if ($class->name === 'DateTime') {
                         if ($data[$field] !== '') {
-                            $data[$field] = new \DateTime($data[$field]);
+                            try {
+                                $data[$field] = new \DateTime($data[$field]);
+                            } catch (\Exception $e) {
+                                //noop
+                            }
                         } else {
                             unset($data[$field]);
                         }
