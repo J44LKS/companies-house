@@ -1,0 +1,23 @@
+{
+  "name": "philwc/companies-house",
+  "description": "A client for the companies house API",
+  "require": {
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "php-ds/php-ds": "^1.1"
+  },
+  "require-dev": {
+    "pds/skeleton": "^1.0"
+  },
+  "authors": [
+    {
+      "name": "Phil Wright- Christie",
+      "email": "philwc@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "philwc\\": "src/"
+    }
+  }
+}
