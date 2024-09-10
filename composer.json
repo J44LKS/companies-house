@@ -3,7 +3,7 @@
   "description": "A client for the companies house API",
   "require": {
     "php": ">=7.0",
-    "guzzlehttp/guzzle": "^6.2",
+    "guzzlehttp/guzzle": "^7.0",
     "php-ds/php-ds": "^1.1"
   },
   "require-dev": {
